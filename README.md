@@ -1,17 +1,30 @@
-# Title: student-project v1.0
+# student-project
 
-## Description
-Lee un csv
+[![CI](https://github.com/Joseverav02/student-project/actions/workflows/ci.yml/badge.svg)](https://github.com/Joseverav02/student-project/actions/workflows/ci.yml)
 
-## Installation instructions
+Herramienta de línea de comandos que lee un CSV y calcula estadísticas descriptivas (media, mediana, desviación típica, mínimo y máximo) de cada columna numérica.
 
+## Uso
 
-## Usage examples
+```bash
+pip install -r requirements.txt
+python analysis.py data/datos.csv
+pytest -q
+```
 
+Ejemplo de salida:
 
-## How to contribute
+```
+3 filas, 4 columnas
+```
 
+## Estructura
 
-## Contact information
-Pablo 
-Jose Maria Vera Verdezoto :verdezoto.vera@gmail.com
+```
+analysis.py          # carga, resumen y CLI
+data/datos.csv       # datos de ejemplo
+tests/test_analysis.py
+```
+
+## Licencia
+MIT
